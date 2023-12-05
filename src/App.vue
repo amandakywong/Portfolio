@@ -1,30 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view />
 </template>
 
+<script></script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: Writer;
+  src: url("../src/assets/fonts/PPWriter-Thin.otf");
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+// @font-face {
+//   font-family: Eiko;
+//   src: url("../src/assets/fonts/PPEiko-Thin.otf");
+// }
+@font-face {
+  font-family: NeueMontreal;
+  src: url("../src/assets/fonts/PPNeueMontreal-Thin.otf");
+}
+@font-face {
+  font-family: NeueMontrealBold;
+  src: url("../src/assets/fonts/PPNeueMontreal-Medium.otf");
 }
 </style>
