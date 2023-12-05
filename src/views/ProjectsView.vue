@@ -1,10 +1,7 @@
 <template>
   <div class="projects">
     <Navbar></Navbar>
-    <div class="container">
-      <p>This is the Projects view</p>
-      <Showcase></Showcase>
-    </div>
+    <Showcase></Showcase>
   </div>
 </template>
 
@@ -22,10 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  background-color: #0c0d0f;
-  height: 100vh;
-}
-.container {
-  padding: 10vh;
+  background-color: #191f2c;
+  height: 190vh;
 }
 </style>
