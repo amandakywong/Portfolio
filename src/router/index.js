@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ProjectsView from "../views/ProjectsView.vue";
+import Market_Project from "../views/Market_Project.vue";
+import LIFX_Project from "../views/LIFX_Project.vue";
+import Portfolio_Project from "../views/Portfolio_Project.vue";
 
 const routes = [
   {
@@ -21,6 +24,21 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+  {
+    path: "/Market_Project",
+    name: "Market_Project",
+    component: Market_Project,
+  },
+  {
+    path: "/LIFX_Project",
+    name: "LIFX_Project",
+    component: LIFX_Project,
+  },
+  {
+    path: "/Portfolio_Project",
+    name: "Portfolio_Project",
+    component: Portfolio_Project,
   },
 ];
 

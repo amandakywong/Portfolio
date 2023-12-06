@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar p-5">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/"></a>
+      <router-link class="navbar-item" to="/"></router-link>
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">
@@ -58,15 +58,20 @@ export default {
     display: none;
   }
 }
+
 .navbar-brand {
-  display: flex;
   position: absolute;
-  padding-left: 2rem;
+  padding-left: 2vw;
+  height: 5vw;
+  width: 10vw;
+  align-items: center;
   .navbar-item {
     background: url(../assets/img/AWwhite_rigot-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 6vw;
+    background-position: center;
+    height: 100%;
+    width: 100%;
   }
 }
 .navbar {

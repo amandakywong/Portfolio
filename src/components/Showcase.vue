@@ -2,18 +2,21 @@
   <div class="projects">
     <p class="page-title">Projects</p>
     <div class="cardcontainer">
-      <div class="card market">
-        <div class="card-image image">
-          <img src="../assets/img/market-icon.png" />
+      <router-link to="/Market_Project">
+        <div class="card market">
+          <div class="card-image image">
+            <img src="../assets/img/market-icon.png" />
+          </div>
+          <div class="info">
+            <p class="title has-text-centered">Market finder</p>
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              labore et cum quae nihil itaque autem. Itaque blanditiis dolorum
+              sunt?
+            </p>
+          </div>
         </div>
-        <div class="info">
-          <p class="title has-text-centered">Market finder</p>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore
-            et cum quae nihil itaque autem. Itaque blanditiis dolorum sunt?
-          </p>
-        </div>
-      </div>
+      </router-link>
       <div class="card lifx">
         <div class="card-image image">
           <img src="../assets/img/lifx-icon.png" />
@@ -62,7 +65,7 @@
   width: 27%;
   border-radius: 5px;
   background-color: #2b303d;
-  box-shadow: inset 0 0px 10px 3px #242430, 0 0 10px 9px #111318;
+  box-shadow: inset 0 0px 10px 3px #242430, 5px 3px 15px 5px #12151c;
   transition: 0.4s ease-in-out;
   &:hover {
     transform: translateY(15px);
