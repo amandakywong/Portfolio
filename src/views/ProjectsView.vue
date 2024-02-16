@@ -20,6 +20,6 @@ export default {
 <style lang="scss" scoped>
 .projects {
   background-color: #191f2c;
-  height: 190vh;
+  height: 100vh;
 }
 </style>

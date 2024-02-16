@@ -10,44 +10,61 @@
           <div class="info">
             <p class="title has-text-centered">Market finder</p>
             <p class="content">
+              A website that facilitates exploration and discovery of
+              Melbourne's vibrant market scene.
+            </p>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/LIFX_Project">
+        <div class="card lifx">
+          <div class="card-image image">
+            <img src="../assets/img/lifx-icon.png" />
+          </div>
+          <div class="info">
+            <p class="title has-text-centered">LIFX automated</p>
+            <p class="content">
+              Personalised automation app synchronises smart lights to sunrise,
+              sunset and various times of day.
+            </p>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/Data_Visualisation_Project">
+        <div class="card data-platform">
+          <div class="card-image image">
+            <img src="../assets/img/data-icon.png" />
+          </div>
+          <div class="info">
+            <p class="title has-text-centered">Data Visualisation Platform</p>
+            <p class="content">
+              Collaborative project with an aim to display data and provide
+              insights for user.
+            </p>
+          </div>
+        </div>
+      </router-link>
+      <!-- <router-link to="Portfolio_Project">
+        <div class="card portfolio">
+          <div class="card-image image">
+            <img src="../assets/img/portfolio-icon.png" />
+          </div>
+          <div class="info">
+            <p class="title has-text-centered">Portfolio</p>
+            <p class="content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               labore et cum quae nihil itaque autem. Itaque blanditiis dolorum
               sunt?
             </p>
           </div>
         </div>
-      </router-link>
-      <div class="card lifx">
-        <div class="card-image image">
-          <img src="../assets/img/lifx-icon.png" />
-        </div>
-        <div class="info">
-          <p class="title has-text-centered">LIFX automated</p>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore
-            et cum quae nihil itaque autem. Itaque blanditiis dolorum sunt?
-          </p>
-        </div>
-      </div>
-      <div class="card portfolio">
-        <div class="card-image image">
-          <img src="../assets/img/portfolio-icon.png" />
-        </div>
-        <div class="info">
-          <p class="title has-text-centered">Portfolio</p>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore
-            et cum quae nihil itaque autem. Itaque blanditiis dolorum sunt?
-          </p>
-        </div>
-      </div>
+      </router-link> -->
     </div>
   </div>
 </template>
 
 <style scoped>
 .projects {
-  height: 90vh;
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -69,16 +86,16 @@
   transition: 0.4s ease-in-out;
   &:hover {
     transform: translateY(15px);
-    filter: opacity(0.7);
+    filter: opacity(0.8);
   }
 }
 .content {
-  font-size: 1vw;
-  font-family: NeueMontreal, sans-serif;
-  color: rgb(237, 237, 237);
+  font-size: 1.5vw;
+  font-family: NeueMontrealBold, sans-serif;
+  color: rgb(228, 228, 228);
   position: absolute;
   left: 1vw;
-  bottom: 1vw;
+  bottom: 3vw;
   width: 90%;
   @media screen and (max-width: 768px) {
     display: none;

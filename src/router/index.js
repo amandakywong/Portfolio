@@ -4,6 +4,7 @@ import ProjectsView from "../views/ProjectsView.vue";
 import Market_Project from "../views/Market_Project.vue";
 import LIFX_Project from "../views/LIFX_Project.vue";
 import Portfolio_Project from "../views/Portfolio_Project.vue";
+import Data_Visualisation_Project from "../views/Data_Visualisation_Project";
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     path: "/Portfolio_Project",
     name: "Portfolio_Project",
     component: Portfolio_Project,
+  },
+  {
+    path: "/Data_Visualisation_Project",
+    name: "Data_Visualisation_Project",
+    component: Data_Visualisation_Project,
   },
 ];
 

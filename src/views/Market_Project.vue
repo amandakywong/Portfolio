@@ -2,18 +2,12 @@
   <div class="Market_Project">
     <Navbar></Navbar>
     <div class="container">
-      <!-- <nav class="breadcrumb" aria-label="breadcrumb">
-        <ul>
-          <li>
-            <router-link to="/ProjectsView" style="color: #9ddcfd"
-              >Projects</router-link
-            >
-          </li>
-          <li class="is-active">
-            <router-link to="">Market Project</router-link>
-          </li>
-        </ul>
-      </nav> -->
+      <!-- Back button -->
+      <div style="padding-top: 3rem; margin-left: -2rem; padding-left: 1rem">
+        <router-link to="/projectsView" class="backbutton">
+          <img style="width: 4%; min-width: 2rem" src="../assets/img/back.png"
+        /></router-link>
+      </div>
       <p
         class="is-size-3 has-text-centered pb-6"
         style="font-family: NeueMontrealRegular"
@@ -23,13 +17,32 @@
       <div class="overview has-text-centered">
         <p class="is-size-4">Project Overview</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
-          numquam soluta dolor repellendus incidunt omnis! Ut cupiditate
-          inventore blanditiis beatae minus voluptas optio sunt unde facere.
-          Perferendis labore iusto atque at excepturi nostrum sint sapiente
-          saepe voluptas, distinctio, porro cupiditate non suscipit asperiores
-          cumque iste rerum deserunt eligendi optio eveniet.
+          This project was amongst my first in using frameworks and databases
+          and proved to be the most rewarding. As a lover of all kinds of
+          markets and inspired by the lack of accessible information about
+          various markets around Melbourne, I created the website that could
+          fulfill this need. It was a rewarding challenge that taught me how to
+          utilise components, routes, databases and API integration. I also was
+          able to practice my front end skills in creating responsive,
+          accessible and clean user interface.
         </p>
+      </div>
+      <div class="screenshots section">
+        <p class="is-size-4">Screenshots</p>
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-half">
+            <img src="../assets/img/MarketProject/home.png" />
+          </div>
+          <div class="column is-half">
+            <img src="../assets/img/MarketProject/filter.png" />
+          </div>
+          <div class="column is-half">
+            <img src="../assets/img/MarketProject/cards.png" />
+          </div>
+          <div class="column">
+            <img src="../assets/img/MarketProject/details.png" />
+          </div>
+        </div>
       </div>
       <div class="tech section">
         <p class="is-size-4">Technologies Used</p>
@@ -84,62 +97,65 @@
           </figure>
         </div>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
-          ipsum!
+          <!-- Can add information about technologies used -->
         </p>
       </div>
       <div class="features section">
         <p class="is-size-4">Features</p>
+        <p style="font-weight: bolder">On market list page: <br /></p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          natus est earum cum consectetur laudantium doloremque ab reiciendis
-          eveniet aliquid.
+          • Display responsive cards for each market for different browser
+          sizes<br />
+          • Filter list of markets via category and/or location <br /><br />
+        </p>
+        <p style="font-weight: bolder">On market details page: <br /></p>
+        <p>
+          • Market details page dynamically loaded via PostGreSQL database
+          <br />
+          • Image carousel on market details page<br />
+          • Integrate Google Maps API for interactive map location
         </p>
       </div>
       <div class="challenges section">
         <p class="is-size-4">Challenges</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          nobis eius earum iusto odit mollitia numquam incidunt nulla
-          perspiciatis, ad cumque autem dolor, ullam sunt debitis et inventore.
+          Navigating the intricacies of asynchronous functions proved
+          challenging in developing this web application, particularly when
+          fetching data from a database and creating an accessible information
+          object. Employing techniques like Promises and async/await syntax, I
+          coordinated the creation of the information object, ensuring it relied
+          on completed database requests. Overcoming this challenge was a
+          valuable learning experience, refining my ability to handle
+          asynchronous operations effectively in real-world applications.
         </p>
       </div>
       <div class="lessons section">
         <p class="is-size-4">Lessons Learned</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-          necessitatibus?
+          • Employing best practice organising of code files, documenting via
+          comments, minimising excessive code by utilising reusable
+          components<br />
+          • Setting up and fetching neat and accessible data through requests to
+          database<br />
+          • Utilising dynamic loading through SvelteKit's 'routes' to build a
+          cohesive single page application <br />
+          • Building user interface with css framework for more concise in-line
+          styling<br />
+          • Creating filter toggle function and developing underlying logic to
+          create an array of filtered data to display and hide particular cards
+          depending on user input. <br />
         </p>
       </div>
-      <div class="screenshots section">
-        <p class="is-size-4">Screenshots</p>
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/home.png" />
-          </div>
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/filter.png" />
-          </div>
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/cards.png" />
-          </div>
-          <div class="column">
-            <img src="../assets/img/MarketProject/details.png" />
-          </div>
-        </div>
-      </div>
+
       <div class="code section">
         <p class="is-size-4">Code Snippets</p>
       </div>
       <div class="improvements section">
         <p class="is-size-4">Future Improvements</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          sapiente distinctio, commodi ullam ratione corporis nemo laborum, non
-          ipsa error incidunt ad possimus necessitatibus facere veniam expedita
-          cupiditate assumenda rerum consectetur similique explicabo culpa aut
-          porro vero? Vero, iure? Nemo consequuntur est, dicta dolor nesciunt
-          architecto vero vitae a molestias?
+          • Add additional filter that allows user to search by date. <br />
+          • Store data on refresh of market details page, so that reloads
+          display the same details previously viewed <br />
         </p>
       </div>
     </div>
@@ -165,6 +181,7 @@ p {
   font-family: NeueMontreal, sans-serif;
   color: whitesmoke;
   margin: 1vw;
+  font-size: 1.3rem;
 }
 .container {
   padding-left: 12vh;

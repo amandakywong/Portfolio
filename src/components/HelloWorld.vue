@@ -13,8 +13,8 @@
       <p
         class="description is-size-4-desktop is-size-5-tablet is-size-6-mobile"
       >
-        Pursuing the creation of engaging and accessible interfaces. With a
-        mission to innovate solutions that bridge health and technology.
+        Committed to creating technology-driven solutions that advance
+        healthcare accessibility and experiences.
       </p>
     </div>
   </div>
@@ -51,7 +51,7 @@ export default {
   font-family: NeueMontreal, sans-serif;
 }
 .description {
-  padding-top: 45vh;
+  padding-top: 55vh;
   padding-right: 5rem;
   color: whitesmoke;
   position: relative;

@@ -36,7 +36,7 @@ export default {
 <style scoped lang="scss">
 .Contactpage {
   position: absolute;
-  height: 100vh;
+  height: 75vh;
   width: 100vw;
   top: 100vh;
   background-color: #07070d;

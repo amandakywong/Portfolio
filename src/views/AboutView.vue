@@ -5,16 +5,22 @@
       <div class="columns">
         <div class="column is-two-thirds">
           <h1 class="is-size-7-mobile">
-            This is an about page <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, sed
-            minima amet sit mole`stiae minus corporis ea repellat. Quaerat quam
-            perferendis consequatur natus est quae dolor distinctio dignissimos,
-            consequuntur quia iste atque incidunt excepturi? Repellat esse,
-            omnis similique, laboriosam odio nesciunt tempore hic cumque maiores
-            sapiente necessitatibus! Maxime, tempora aliquid?<br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            dolor atque a nobis temporibus veritatis odit error eaque
-            exercitationem eos vel neque ea autem, rerum suscipit explicabo.
+            Hello! I'm Amanda, an aspiring developer with a background in
+            pharmacy and public health, now transitioning into healthcare
+            technology. My goal is to leverage my skills to drive innovation and
+            efficiency in healthcare.<br /><br />
+            I am highly motivated and self-driven and thrive in dynamic
+            environments where I can build on my soft and hard skills. I
+            strongly believe in working with passionate individuals and teams
+            that tackle challenges with a diverse set of minds.
+            <br /><br />
+            I am dedicated to continually expanding my skills and knowledge via
+            a wide range of projects and staying curious about everything!
+            <br /><br />
+            I am excited at the opportunity to connect with like-minded people
+            and create impactful solutions together!
+            <br /><br />
+            Find my contact details below
           </h1>
           <img id="morethan" src="../assets/img/light.png" />
         </div>
@@ -23,19 +29,23 @@
         </div>
       </div>
     </div>
+    <div class="contact">
+      <Contact></Contact>
+    </div>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import Contact from "@/components/Contact.vue";
 export default {
   name: "AboutView",
   components: {
     Navbar,
+    Contact,
   },
 };
 </script>
-
 <style scoped>
 .about {
   background-image: url(../assets/img/bg-about.png);
@@ -53,7 +63,7 @@ export default {
   height: auto;
   width: auto;
   padding-top: 20vh;
-  filter: drop-shadow(7px 1px 2px #bf6d49);
+  filter: drop-shadow(5px 0px 12px #bf6d49);
   @media (max-width: 768px) {
     height: 16rem;
     padding-top: 5vh;
