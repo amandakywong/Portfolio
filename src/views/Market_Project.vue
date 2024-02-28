@@ -25,6 +25,11 @@
           utilise components, routes, databases and API integration. I also was
           able to practice my front end skills in creating responsive,
           accessible and clean user interface.
+          <br /><br />
+          Interact with web app here:
+          <a href="melbournemarkets.netlify.app/home"
+            >melbournemarkets.netlify.app/home</a
+          >
         </p>
       </div>
       <div class="screenshots section">

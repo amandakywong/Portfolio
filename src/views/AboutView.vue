@@ -24,7 +24,7 @@
           </h1>
           <img id="morethan" src="../assets/img/light.png" />
         </div>
-        <div class="column">
+        <div class="column profile-column">
           <img src="../assets/img/profile.png" alt="profile" id="profile" />
         </div>
       </div>
@@ -55,8 +55,16 @@ export default {
   height: 110vh;
 }
 .container {
-  padding: 10vh;
+  padding-top: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  height: 95vh;
   color: white;
+  @media screen and (max-width: 768px) {
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
 }
 #profile {
   display: flex;
@@ -65,9 +73,14 @@ export default {
   padding-top: 20vh;
   filter: drop-shadow(5px 0px 12px #bf6d49);
   @media (max-width: 768px) {
-    height: 16rem;
-    padding-top: 5vh;
-    margin-left: 30vh;
+    height: 29vh;
+    margin-left: 20vh;
+    padding-top: 0vh;
+  }
+}
+.profile-column {
+  @media screen and (max-width: 768px) {
+    margin-top: -10vh;
   }
 }
 #morethan {

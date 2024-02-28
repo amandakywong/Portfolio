@@ -33,6 +33,9 @@ export default {
 <style scoped lang="scss">
 .intro {
   padding-left: 10vh;
+  @media screen and (max-width: 768px) {
+    padding-left: 6vh;
+  }
 }
 .name {
   padding-top: 50vh;
@@ -60,7 +63,7 @@ export default {
 
   @media screen and (max-width: 768px) {
     padding-top: 17vh;
-    padding-left: 10vh;
+    padding-left: 6vh;
     padding-right: 30vh;
     text-align: left;
   }
