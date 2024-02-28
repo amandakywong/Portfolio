@@ -27,7 +27,7 @@
           accessible and clean user interface.
           <br /><br />
           Interact with web app here:
-          <a href="melbournemarkets.netlify.app/home"
+          <a href="https://melbournemarkets.netlify.app/home"
             >melbournemarkets.netlify.app/home</a
           >
         </p>
