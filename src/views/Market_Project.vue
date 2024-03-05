@@ -22,9 +22,11 @@
           markets and inspired by the lack of accessible information about
           various markets around Melbourne, I created the website that could
           fulfill this need. It was a rewarding challenge that taught me how to
-          utilise components, routes, databases and API integration. I also was
-          able to practice my front end skills in creating responsive,
-          accessible and clean user interface.
+          utilise components, routes, databases and API integration. I was able
+          to practice my front-end skills in creating responsive, accessible and
+          clean user interface whilst also understanding integration to back-end
+          programming including database requests and utilising Amazon Web
+          Services (AWS) Relational Database Service to reduce security risks.
           <br /><br />
           Interact with web app here:
           <a href="https://melbournemarkets.netlify.app/home"
@@ -142,6 +144,8 @@
           components<br />
           • Setting up and fetching neat and accessible data through requests to
           database<br />
+          • Deploying a database on AWS to reduce security risk to my personal
+          device from external access<br />
           • Utilising dynamic loading through SvelteKit's 'routes' to build a
           cohesive single page application <br />
           • Building user interface with css framework for more concise in-line
@@ -160,7 +164,7 @@
         <p>
           • Add additional filter that allows user to search by date. <br />
           • Store data on refresh of market details page, so that reloads
-          display the same details previously viewed <br />
+          persist and display the same details previously viewed <br />
         </p>
       </div>
     </div>
