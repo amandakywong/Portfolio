@@ -3,7 +3,7 @@
     <Navbar></Navbar>
     <div class="container">
       <div class="columns">
-        <div class="column is-two-thirds">
+        <div class="column text is-two-thirds">
           <h1 class="is-size-7-mobile">
             Hello! I'm Amanda, an aspiring developer with a background in
             pharmacy and public health, now transitioning into healthcare
@@ -27,27 +27,28 @@
           <img src="../assets/img/profile.png" alt="profile" id="profile" />
         </div>
       </div>
-    </div>
-    <div class="columnsabout is-mobile">
-      <div class="column content">
-        <div class="email-details">
-          <span class="email icon"><i class="fa-solid fa-envelope"></i></span>
-          <p>amandakywong@gmail.com</p>
-        </div>
-        <div class="contact-icons">
-          <span class="linkedin icon">
-            <a href="www.linkedin.com/in/amanda-wong-aw121"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </span>
-          <span class="github icon">
-            <a href="https://github.com/amandakywong">
-              <i class="fa-brands fa-square-github"></i>
-            </a>
-          </span>
+      <div class="columnsabout is-mobile">
+        <div class="column content">
+          <div class="email-details">
+            <span class="email icon"><i class="fa-solid fa-envelope"></i></span>
+            <p>amandakywong@gmail.com</p>
+          </div>
+          <div class="contact-icons">
+            <span class="linkedin icon">
+              <a href="www.linkedin.com/in/amanda-wong-aw121"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </span>
+            <span class="github icon">
+              <a href="https://github.com/amandakywong">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- <div class="contact">
       <Contact></Contact>
     </div> -->
@@ -78,12 +79,14 @@ export default {
   padding-left: 10vh;
   padding-right: 10vh;
   height: 45vh;
-  color: white;
   @media screen and (max-width: 768px) {
     padding-top: 5vh;
     padding-left: 5vh;
     padding-right: 5vh;
   }
+}
+.text {
+  color: white;
 }
 #profile {
   display: flex;
@@ -107,16 +110,13 @@ export default {
 }
 /* Contact section */
 p {
-  color: whitesmoke;
+  color: rgb(216, 216, 216);
   font-size: 2vw;
   font-family: NeueMontreal, sans-serif;
   display: inline-block;
   margin-left: 1rem;
-}
-.columnsabout {
-  padding: 15vh;
   @media screen and (max-width: 768px) {
-    padding-left: 6vh;
+    font-size: 3vw;
   }
 }
 a {
