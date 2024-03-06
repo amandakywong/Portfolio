@@ -45,10 +45,10 @@ export default {
     font-size: 2vw;
     font-family: NeueMontreal, sans-serif;
   }
-  @media screen and (max-width: 768px) {
-    position: relative;
-    top: 0px;
-  }
+  // @media screen and (max-width: 768px) {
+  //   position: relative;
+  //   top: 0px;
+  // }
 }
 .columns {
   padding: 15vh;
