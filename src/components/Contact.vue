@@ -12,7 +12,7 @@
         </div>
         <div class="contact-icons">
           <span class="linkedin icon">
-            <a href="www.linkedin.com/in/amanda-wong-aw121"
+            <a href="https://linkedin.com/in/amanda-wong-aw121"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </span>

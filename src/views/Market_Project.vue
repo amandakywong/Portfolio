@@ -191,16 +191,29 @@ p {
   color: whitesmoke;
   margin: 1vw;
   font-size: 1.3rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin: 0;
+  }
 }
 .container {
   padding-left: 12vh;
   padding-right: 12vh;
+  @media screen and (max-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .section {
-  padding-bottom: 1.5vh;
+  padding: 0 1rem 1.5vh 1rem;
 }
 .is-size-4 {
-  text-decoration: underline;
+  font-weight: bold;
+  margin: 2vh;
+  padding-top: 3rem;
+  @media screen and (max-width: 768px) {
+    margin: 1rem;
+  }
 }
 figurecaption {
   display: flex;
@@ -215,6 +228,11 @@ figure {
 .tech-icons img {
   display: block;
   margin: auto;
+}
+.tech-icons {
+  @media screen and (max-width: 768px) {
+    margin: auto;
+  }
 }
 .columns {
   margin-left: -6vw;

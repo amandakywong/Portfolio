@@ -5,6 +5,7 @@ import Market_Project from "../views/Market_Project.vue";
 import LIFX_Project from "../views/LIFX_Project.vue";
 import Portfolio_Project from "../views/Portfolio_Project.vue";
 import Data_Visualisation_Project from "../views/Data_Visualisation_Project";
+import Resume from "../views/Resume.vue";
 
 const routes = [
   {
@@ -45,6 +46,11 @@ const routes = [
     path: "/Data_Visualisation_Project",
     name: "Data_Visualisation_Project",
     component: Data_Visualisation_Project,
+  },
+  {
+    path: "/resume",
+    name: "resume",
+    component: Resume,
   },
 ];
 

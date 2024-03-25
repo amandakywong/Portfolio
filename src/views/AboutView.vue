@@ -72,7 +72,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 110vh;
+  height: 120vh;
 }
 .container {
   padding-top: 10vh;
@@ -135,8 +135,8 @@ a {
 }
 
 .email-details {
-  @media screen and (max-width: 768px) {
-    margin: 0.5rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 9rem;
   }
   span {
     color: #dcdcdc;

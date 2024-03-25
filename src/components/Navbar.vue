@@ -10,6 +10,7 @@
         <router-link to="/projectsView" class="navbar-item"
           >Projects</router-link
         >
+        <router-link to="/resume" class="navbar-item">Resume</router-link>
       </div>
     </div>
     <div id="burger">

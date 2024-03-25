@@ -126,6 +126,9 @@
     transform: translateY(-5px);
     transition: 0.4s ease-in-out;
   }
+  @media screen and (max-width: 768px) {
+    opacity: 1;
+  }
 }
 .card-content {
   margin-top: -1rem;
