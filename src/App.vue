@@ -2,7 +2,20 @@
   <router-view />
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 @font-face {

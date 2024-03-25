@@ -36,18 +36,18 @@
       </div>
       <div class="screenshots section">
         <p class="is-size-4">Screenshots</p>
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/home.png" />
+        <div class="columns is-mobile is-multiline">
+          <div class="item column is-6 is-clickable">
+            <img id="item1" src="../assets/img/MarketProject/home.png" />
           </div>
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/filter.png" />
+          <div class="item column is-6 is-clickable">
+            <img id="item2" src="../assets/img/MarketProject/filter.png" />
           </div>
-          <div class="column is-half">
-            <img src="../assets/img/MarketProject/cards.png" />
+          <div class="item column is-6 is-clickable">
+            <img id="item3" src="../assets/img/MarketProject/cards.png" />
           </div>
-          <div class="column">
-            <img src="../assets/img/MarketProject/details.png" />
+          <div class="item column is-6 is-clickable">
+            <img id="item4" src="../assets/img/MarketProject/details.png" />
           </div>
         </div>
       </div>
@@ -178,6 +178,26 @@ export default {
   components: {
     Navbar,
   },
+  mounted() {
+    this.zoomFunction();
+  },
+  methods: {
+    zoomFunction() {
+      let items = document.querySelectorAll(".item");
+      console.log(items);
+      items.forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("active");
+          console.log(this);
+          items.forEach((item) => {
+            if (item !== this) {
+              item.classList.toggle("hidden");
+            }
+          });
+        });
+      });
+    },
+  },
 };
 </script>
 
@@ -186,6 +206,15 @@ export default {
   background-color: #19202b;
   height: 540vh;
 }
+.active {
+  width: 100% !important;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
 p {
   font-family: NeueMontreal, sans-serif;
   color: whitesmoke;

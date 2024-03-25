@@ -29,22 +29,28 @@
       <div class="screenshots section">
         <p class="is-size-4">Screenshots</p>
         <div class="columns is-multiline is-mobile">
-          <div class="column is-three-quarters">
+          <div class="screenshotItem column is-6 is-clickable">
             <p class="imgcap">Dashboard</p>
             <img src="../assets/img/Data_Visualisation/dashboard.png" />
-            <br />
-            <br />
+          </div>
+          <div class="screenshotItem column is-6 is-clickable">
             <p class="imgcap">Articles Page</p>
             <img src="../assets/img/Data_Visualisation/articles.png" />
           </div>
         </div>
       </div>
-      <div class="code section" style="width: 75%">
+      <div class="code section">
         <p class="is-size-4">Code Snippets</p>
-        <p class="imgcap pt-5">Fetch data from database</p>
-        <img src="../assets/img/Data_Visualisation/fetchdata.png" />
-        <p class="imgcap pt-5">Render chart via accessing object values</p>
-        <img src="../assets/img/Data_Visualisation/renderchart.png" />
+        <div class="columns is-multiline is-mobile">
+          <div class="codeItem column is-6 is-clickable">
+            <p class="imgcap pt-5">Fetch data from database</p>
+            <img src="../assets/img/Data_Visualisation/fetchdata.png" />
+          </div>
+          <div class="codeItem column is-6 is-clickable">
+            <p class="imgcap pt-5">Render chart via accessing object values</p>
+            <img src="../assets/img/Data_Visualisation/renderchart.png" />
+          </div>
+        </div>
       </div>
       <div class="tech section">
         <p class="is-size-4">Technologies Used</p>
@@ -151,7 +157,47 @@
     </div>
   </div>
 </template>
+<script>
+import Navbar from "@/components/Navbar.vue";
+export default {
+  name: "LIFX_Project",
+  components: {
+    Navbar,
+  },
+  mounted() {
+    this.zoomFunction();
+  },
+  methods: {
+    zoomFunction() {
+      let codeItems = document.querySelectorAll(".codeItem");
 
+      codeItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          codeItems.forEach((item) => {
+            if (item !== this) {
+              item.classList.toggle("hidden");
+            }
+          });
+        });
+      });
+      let screenshotItems = document.querySelectorAll(".screenshotItem");
+      screenshotItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          screenshotItems.forEach((item) => {
+            if (item !== this) {
+              item.classList.toggle("hidden");
+            }
+          });
+        });
+      });
+    },
+  },
+};
+</script>
 <style scoped>
 .Data_Project {
   background-color: #19202b;
@@ -181,7 +227,14 @@ p {
     padding: 0 1rem 1.5vh 1rem;
   }
 }
+.active {
+  width: 100% !important;
+  height: auto;
+}
 
+.hidden {
+  display: none;
+}
 .is-size-4 {
   font-weight: bold;
   margin: 2vh;
@@ -219,13 +272,3 @@ figure {
   color: rgb(180, 178, 178);
 }
 </style>
-
-<script>
-import Navbar from "@/components/Navbar.vue";
-export default {
-  name: "LIFX_Project",
-  components: {
-    Navbar,
-  },
-};
-</script>

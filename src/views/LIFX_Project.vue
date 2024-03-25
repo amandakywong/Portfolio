@@ -28,23 +28,23 @@
       <div class="screenshots section">
         <p class="is-size-4">Screenshots</p>
         <div class="columns is-multiline is-mobile">
-          <div class="column is-three-quarters">
+          <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">
               API accessing sunrise and sunset times for today
             </p>
             <img src="../assets/img/LIFX/sun api access.png" />
-            <br />
-            <br />
+          </div>
+          <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">Logic for changing light settings at sunset</p>
             <img src="../assets/img/LIFX/Sunset function.png" />
-            <br />
-            <br />
+          </div>
+          <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">
               Functions to get current time and reformat into consistent format
             </p>
             <img src="../assets/img/LIFX/Helper function.png" />
-            <br />
-            <br />
+          </div>
+          <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">
               Functions to fetch sunrise and sunset data and if matching
               requirements then triggers functions to change light settings.
@@ -139,6 +139,36 @@
   </div>
 </template>
 
+<script>
+import Navbar from "@/components/Navbar.vue";
+export default {
+  name: "LIFX_Project",
+  components: {
+    Navbar,
+  },
+  mounted() {
+    this.zoomFunction();
+  },
+  methods: {
+    zoomFunction() {
+      let lifxItems = document.querySelectorAll(".lifxItem");
+      console.log(lifxItems);
+      lifxItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("active");
+          console.log(this);
+          lifxItems.forEach((item) => {
+            if (item !== this) {
+              item.classList.toggle("hidden");
+            }
+          });
+        });
+      });
+    },
+  },
+};
+</script>
+
 <style scoped>
 .LIFX_Project {
   background-color: #19202b;
@@ -168,7 +198,14 @@ p {
     padding: 0 1rem 1.5vh 1rem;
   }
 }
+.active {
+  width: 100% !important;
+  height: auto;
+}
 
+.hidden {
+  display: none;
+}
 .is-size-4 {
   font-weight: bold;
   margin: 2vh;
@@ -202,13 +239,3 @@ figure {
   color: rgb(180, 178, 178);
 }
 </style>
-
-<script>
-import Navbar from "@/components/Navbar.vue";
-export default {
-  name: "LIFX_Project",
-  components: {
-    Navbar,
-  },
-};
-</script>
