@@ -47,7 +47,9 @@
             <img src="../assets/img/Data_Visualisation/fetchdata.png" />
           </div>
           <div class="codeItem column is-6 is-clickable">
-            <p class="imgcap pt-5">Render chart via accessing object values</p>
+            <p class="imgcap pt-5">
+              Dynamically render chart by accessing object values
+            </p>
             <img src="../assets/img/Data_Visualisation/renderchart.png" />
           </div>
         </div>

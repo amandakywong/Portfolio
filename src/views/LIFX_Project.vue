@@ -35,19 +35,20 @@
             <img src="../assets/img/LIFX/sun api access.png" />
           </div>
           <div class="lifxItem column is-6 is-clickable">
-            <p class="imgcap">Logic for changing light settings at sunset</p>
+            <p class="imgcap">
+              Helper function for changing light settings at sunset
+            </p>
             <img src="../assets/img/LIFX/Sunset function.png" />
           </div>
           <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">
-              Functions to get current time and reformat into consistent format
+              Re-format time into standardised hour and minute
             </p>
-            <img src="../assets/img/LIFX/Helper function.png" />
+            <img src="../assets/img/LIFX/reformat time.png" />
           </div>
           <div class="lifxItem column is-6 is-clickable">
             <p class="imgcap">
-              Functions to fetch sunrise and sunset data and if matching
-              requirements then triggers functions to change light settings.
+              Checking if statements to trigger light change functions
             </p>
             <img src="../assets/img/LIFX/run functions time interval.png" />
           </div>

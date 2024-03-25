@@ -155,10 +155,10 @@
           depending on user input. <br />
         </p>
       </div>
-
+      <!-- 
       <div class="code section">
         <p class="is-size-4">Code Snippets</p>
-      </div>
+      </div> -->
       <div class="improvements section">
         <p class="is-size-4">Future Improvements</p>
         <p>
