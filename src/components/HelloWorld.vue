@@ -34,14 +34,15 @@ export default {
     padding-left: 6vh;
   }
 }
+
 .name {
-  padding-top: 50vh;
+  padding-top: 52vh;
   color: whitesmoke;
   font-size: 8vh;
   font-family: Writer, serif;
 
   @media screen and (max-width: 768px) {
-    padding-top: 6vh;
+    padding-top: 3vh;
   }
 }
 
@@ -49,6 +50,16 @@ export default {
 .location {
   color: grey;
   font-family: NeueMontreal, sans-serif;
+}
+.title {
+  @media screen and (max-width: 768px) {
+    padding-top: 25vh;
+  }
+}
+.location {
+  @media screen and (max-width: 768px) {
+    margin-top: -14px;
+  }
 }
 .description {
   padding-top: 55vh;
@@ -59,9 +70,9 @@ export default {
   font-family: NeueMontreal, sans-serif;
 
   @media screen and (max-width: 768px) {
-    padding-top: 17vh;
-    padding-left: 6vh;
-    padding-right: 30vh;
+    padding-top: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
     text-align: left;
   }
 }

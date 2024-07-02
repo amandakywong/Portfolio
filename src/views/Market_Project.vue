@@ -204,7 +204,10 @@ export default {
 <style scoped>
 .Market_Project {
   background-color: #19202b;
-  height: 540vh;
+  height: 330vh;
+  @media screen and (max-width: 768px) {
+    height: 430vh;
+  }
 }
 .active {
   width: 100% !important;
